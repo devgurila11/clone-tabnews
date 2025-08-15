@@ -1,5 +1,5 @@
 function Home(){
-    return <h1>Gordo fica ligeiro que eu estou invadindo a Internet! "Assinado Gurila"</h1>
+    return <h1>Hellow World</h1>
 }
 
 export default Home;

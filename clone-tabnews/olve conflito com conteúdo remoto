@@ -1,0 +1,124 @@
+[33mcommit 7a9d35ff80e3ebd47ceff6765c6c4c4c3cda7dc7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: bd26827 c991eab
+Author: rafagurila11@gmail.com <rafagurila11@gmail.com>
+Date:   Wed Aug 13 12:04:06 2025 -0300
+
+    Resolve conflito com conteúdo remoto
+
+[33mcommit bd26827ef374e951e0c9397f1b0a2ea8df37d036[m
+Author: rafagurila11@gmail.com <rafagurila11@gmail.com>
+Date:   Wed Aug 13 11:57:58 2025 -0300
+
+    primeiro commit
+
+ .gitignore                                         |     1 [32m+[m
+ .nvmrc                                             |     1 [32m+[m
+ clone-tabnews                                      |     1 [32m+[m
+ node_modules/.bin/loose-envify                     |    16 [32m+[m
+ node_modules/.bin/loose-envify.cmd                 |    17 [32m+[m
+ node_modules/.bin/loose-envify.ps1                 |    28 [32m+[m
+ node_modules/.bin/nanoid                           |    16 [32m+[m
+ node_modules/.bin/nanoid.cmd                       |    17 [32m+[m
+ node_modules/.bin/nanoid.ps1                       |    28 [32m+[m
+ node_modules/.bin/next                             |    16 [32m+[m
+ node_modules/.bin/next.cmd                         |    17 [32m+[m
+ node_modules/.bin/next.ps1                         |    28 [32m+[m
+ node_modules/.package-lock.json                    |   255 [32m+[m
+ node_modules/@next/env/README.md                   |     3 [32m+[m
+ node_modules/@next/env/dist/index.js               |     1 [32m+[m
+ node_modules/@next/env/package.json                |    39 [32m+[m
+ node_modules/@next/env/types/index.d.ts            |    17 [32m+[m
+ node_modules/@next/swc-win32-x64-msvc/README.md    |     3 [32m+[m
+ .../next-swc.win32-x64-msvc.node                   |   Bin [31m0[m -> [32m103072256[m bytes
+ node_modules/@next/swc-win32-x64-msvc/package.json |    18 [32m+[m
+ .../helpers/lib/_apply_decorated_descriptor.js     |    39 [32m+[m
+ .../@swc/helpers/lib/_array_like_to_array.js       |    15 [32m+[m
+ node_modules/@swc/helpers/lib/_array_with_holes.js |    13 [32m+[m
+ .../@swc/helpers/lib/_array_without_holes.js       |    19 [32m+[m
+ .../@swc/helpers/lib/_assert_this_initialized.js   |    16 [32m+[m
+ node_modules/@swc/helpers/lib/_async_generator.js  |   104 [32m+[m
+ .../@swc/helpers/lib/_async_generator_delegate.js  |    50 [32m+[m
+ node_modules/@swc/helpers/lib/_async_iterator.js   |    51 [32m+[m
+ .../@swc/helpers/lib/_async_to_generator.js        |    39 [32m+[m
+ .../@swc/helpers/lib/_await_async_generator.js     |    19 [32m+[m
+ node_modules/@swc/helpers/lib/_await_value.js      |    13 [32m+[m
+ .../helpers/lib/_check_private_redeclaration.js    |    15 [32m+[m
+ .../lib/_class_apply_descriptor_destructure.js     |    30 [32m+[m
+ .../helpers/lib/_class_apply_descriptor_get.js     |    16 [32m+[m
+ .../helpers/lib/_class_apply_descriptor_set.js     |    23 [32m+[m
+ .../helpers/lib/_class_apply_descriptor_update.js  |    36 [32m+[m
+ node_modules/@swc/helpers/lib/_class_call_check.js |    22 [32m+[m
+ .../lib/_class_check_private_static_access.js      |    15 [32m+[m
+ ..._class_check_private_static_field_descriptor.js |    15 [32m+[m
+ .../helpers/lib/_class_extract_field_descriptor.js |    16 [32m+[m
+ .../@swc/helpers/lib/_class_name_tdz_error.js      |    13 [32m+[m
+ .../lib/_class_private_field_destructure.js        |    21 [32m+[m
+ .../@swc/helpers/lib/_class_private_field_get.js   |    21 [32m+[m
+ .../@swc/helpers/lib/_class_private_field_init.js  |    20 [32m+[m
+ .../helpers/lib/_class_private_field_loose_base.js |    16 [32m+[m
+ .../helpers/lib/_class_private_field_loose_key.js  |    14 [32m+[m
+ .../@swc/helpers/lib/_class_private_field_set.js   |    22 [32m+[m
+ .../helpers/lib/_class_private_field_update.js     |    21 [32m+[m
+ .../@swc/helpers/lib/_class_private_method_get.js  |    16 [32m+[m
+ .../@swc/helpers/lib/_class_private_method_init.js |    20 [32m+[m
+ .../@swc/helpers/lib/_class_private_method_set.js  |    13 [32m+[m
+ .../lib/_class_static_private_field_destructure.js |    23 [32m+[m
+ .../lib/_class_static_private_field_spec_get.js    |    23 [32m+[m
+ .../lib/_class_static_private_field_spec_set.js    |    24 [32m+[m
+ .../lib/_class_static_private_field_update.js      |    23 [32m+[m
+ .../lib/_class_static_private_method_get.js        |    20 [32m+[m
+ node_modules/@swc/helpers/lib/_construct.js        |    47 [32m+[m
+ node_modules/@swc/helpers/lib/_create_class.js     |    24 [32m+[m
+ .../lib/_create_for_of_iterator_helper_loose.js    |    35 [32m+[m
+ node_modules/@swc/helpers/lib/_create_super.js     |    31 [32m+[m
+ node_modules/@swc/helpers/lib/_decorate.js         |   353 [32m+[m
+ node_modules/@swc/helpers/lib/_defaults.js         |    21 [32m+[m
+ .../helpers/lib/_define_enumerable_properties.js   |    29 [32m+[m
+ node_modules/@swc/helpers/lib/_define_property.js  |    23 [32m+[m
+ node_modules/@swc/helpers/lib/_export_star.js      |    21 [32m+[m
+ node_modules/@swc/helpers/lib/_extends.js          |    27 [32m+[m
+ node_modules/@swc/helpers/lib/_get.js              |    35 [32m+[m
+ node_modules/@swc/helpers/lib/_get_prototype_of.js |    19 [32m+[m
+ node_modules/@swc/helpers/lib/_inherits.js         |    29 [32m+[m
+ node_modules/@swc/helpers/lib/_inherits_loose.js   |    15 [32m+[m
+ .../helpers/lib/_initializer_define_property.js    |    19 [32m+[m
+ .../helpers/lib/_initializer_warning_helper.js     |    13 [32m+[m
+ node_modules/@swc/helpers/lib/_instanceof.js       |    24 [32m+[m
+ .../@swc/helpers/lib/_interop_require_default.js   |    15 [32m+[m
+ .../@swc/helpers/lib/_interop_require_wildcard.js  |    49 [32m+[m
+ .../@swc/helpers/lib/_is_native_function.js        |    13 [32m+[m
+ .../helpers/lib/_is_native_reflect_construct.js    |    21 [32m+[m
+ .../@swc/helpers/lib/_iterable_to_array.js         |    13 [32m+[m
+ .../@swc/helpers/lib/_iterable_to_array_limit.js   |    34 [32m+[m
+ .../helpers/lib/_iterable_to_array_limit_loose.js  |    20 [32m+[m
+ node_modules/@swc/helpers/lib/_jsx.js              |    49 [32m+[m
+ node_modules/@swc/helpers/lib/_new_arrow_check.js  |    15 [32m+[m
+ .../@swc/helpers/lib/_non_iterable_rest.js         |    13 [32m+[m
+ .../@swc/helpers/lib/_non_iterable_spread.js       |    13 [32m+[m
+ .../helpers/lib/_object_destructuring_empty.js     |    14 [32m+[m
+ node_modules/@swc/helpers/lib/_object_spread.js    |    31 [32m+[m
+ .../@swc/helpers/lib/_object_spread_props.js       |    34 [32m+[m
+ .../@swc/helpers/lib/_object_without_properties.js |    31 [32m+[m
+ .../lib/_object_without_properties_loose.js        |    22 [32m+[m
+ .../helpers/lib/_possible_constructor_return.js    |    23 [32m+[m
+ node_modules/@swc/helpers/lib/_read_only_error.js  |    13 [32m+[m
+ node_modules/@swc/helpers/lib/_set.js              |    55 [32m+[m
+ node_modules/@swc/helpers/lib/_set_prototype_of.js |    20 [32m+[m
+ .../@swc/helpers/lib/_skip_first_generator_next.js |    17 [32m+[m
+ node_modules/@swc/helpers/lib/_sliced_to_array.js  |    22 [32m+[m
+ .../@swc/helpers/lib/_sliced_to_array_loose.js     |    22 [32m+[m
+ node_modules/@swc/helpers/lib/_super_prop_base.js  |    23 [32m+[m
+ .../@swc/helpers/lib/_tagged_template_literal.js   |    20 [32m+[m
+ .../helpers/lib/_tagged_template_literal_loose.js  |    17 [32m+[m
+ node_modules/@swc/helpers/lib/_throw.js            |    13 [32m+[m
+ node_modules/@swc/helpers/lib/_to_array.js         |    22 [32m+[m
+ .../@swc/helpers/lib/_to_consumable_array.js       |    22 [32m+[m
+ node_modules/@swc/helpers/lib/_to_primitive.js     |    26 [32m+[m
+ node_modules/@swc/helpers/lib/_to_property_key.js  |    21 [32m+[m
+ node_modules/@swc/helpers/lib/_ts_decorate.js      |    11 [32m+[m
+ node_modules/@swc/helpers/lib/_ts_generator.js     |    11 [32m+[m
+ node_modules/@swc/helpers/lib/_ts_metadata.js      |    11 [32m+[m
+ node_modules/@swc/helpers/lib/_ts_param.js         |    11 [32m+[m
+ node_modules/@swc/helpers/lib/_ts_values.js        |    11 [32m+[m
+ node_modules/@swc/helpers/lib/_type_of.js          |    15 [32m+[m
+ .../helpers/li
